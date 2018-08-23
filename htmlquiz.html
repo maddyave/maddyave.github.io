@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>QUIZ TO FIND A PLAYLIST FOR YOUR MOOD</title>
+<link rel="stylesheet" type="text/css" href="style2.css">
+</head>
+<body text="black"/>
+<div class="container">
+<header>
+  <div align="center">MUSIC PLAYLISTS FOR YOUR MOOD</div>
+
+</header>
+  <form class="questionForm" id="intro" data-question="intro">
+    <ul>
+    <input type="text" placeholder="First name">
+    <input type="text" placeholder="Last name">
+    <input type="text" placeholder="Age">
+    <input type="text" placeholder="Email">
+    <input type="radio" id="male" name="gender"><label for="male">MALE</label>
+    <input type="radio" id="female" name="gender"><label for="female">FEMALE</label>
+    <input type="radio" id="other" name="gender"><label for="other">OTHER</label>
+    </ul>
+    <button id="submit">Submit</button>
+  </form>
+  <form class="questionForm" id="q1" data-question="1">
+    <h3>1.What color best describes how you are feeling right now?</h3>
+    <ul>
+      <li><input type="radio" name="q1" value="a" />red</li>
+      <li><input type="radio" name="q1" value="b" />blue</li>
+      <li><input type="radio" name="q1" value="c" />black</li>
+      <li><input type="radio" name="q1" value="d" />yellow</li>
+    </ul>
+    <button id="submit">Submit</button>
+  </form>
+  <form class="questionForm" id="q2" data-question="2">
+    <h3>2.Have you cried of sadness today?</h3>
+    <ul>
+      <li><input type="radio" name="q2" value="a" />yes</li>
+      <li><input type="radio" name="q2" value="b" />no</li>
+    </ul>
+    <button id="submit">Submit</button>
+  </form>
+  <form class="questionForm" id="q3" data-question="3">
+    <h3>3.What do you feel like doing right now?</h3>
+    <ul>
+      <li><input type="radio" name="q3" value="a" />crying</li>
+      <li><input type="radio" name="q3" value="b" />kissing someone</li>
+      <li><input type="radio" name="q3" value="c" />going to sleep</li>
+      <li><input type="radio" name="q3" value="d" />taking an adventure</li>
+    </ul>
+    <button id="submit">Submit</button>
+  </form>
+  <form class="questionForm" id="q4" data-question="4">
+    <h3>4.How do you feel right now?</h3>
+    <ul>
+      <li><input type="radio" name="q4" value="calming" />stressed</li>
+      <li><input type="radio" name="q4" value="sad" />sad</li>
+      <li><input type="radio" name="q4" value="happy" />happy</li>
+      <li><input type="radio" name="q4" value="motivation" />neutral</li>
+    </ul>
+    <button id="submit">Submit</button>
+  </form>
+  <form class="questionForm" id="q5" data-question="5">
+    <h3>5.What do you need right now?</h3>
+    <ul>
+      <li><input type="radio" name="q5" value="a" />a hug</li>
+      <li><input type="radio" name="q5" value="b" />a nap/coffee</li>
+      <li><input type="radio" name="q5" value="c" />a minute to yourself</li>
+      <li><input type="radio" name="q5" value="d" />nothing</li>
+    </ul>
+    <button id="submit">Submit</button>
+  </form>
+  <div id="results"></div>
+  <br>
+</main>
+<footer>
+  <div class="pull-left">Total: 5 questions<div>
+</footer>
+</div><!--container-->
+<div id = "main">
+
+  <h1>Music For Your Mood (click on the hyperlink)</h1>
+  <div id="sad">
+      <a href= https://www.youtube.com/playlist?list=PLtiGJe6p7g-dPnJPVMWUr-XrvU-WBd0r6 target="_blank">In My Bag </a>  <img src="sponge.png" width= "300" height="222" >
+  </div>
+  <div id="motivation">
+    <a href= https://www.youtube.com/playlist?list=PLtiGJe6p7g-eLmy5GulSPAtoIguP8Co4p target="_blank"> Motivations </a>  <img src="gymflow.jpg" width= "300" height="222" >
+  </div>
+  <div id="happy">
+  <a href= https://www.youtube.com/playlist?list=PLtiGJe6p7g-d-j87L6_2Tk4DhP3QxEIfP target="_blank"> Litty Lit Lit </a> <img src="party.jpg" width= "300" height="222" >
+  </div>
+  <div id="calming">
+  <a href= https://www.youtube.com/playlist?list=PLtiGJe6p7g-ckmME3hItebWcfwZM6sg1A target="_blank"> Calming </a>  <img src="simpson.jpg" width="300" height= "222">
+</div>
+</div>
+<script src="jquery.js"></script>
+<script src="quiz.js"></script>
+</body>
+</html>
